@@ -1,0 +1,35 @@
+# Spring Boot Application Configuration Example
+# Copy this file to application.properties and update with your actual values
+
+spring.application.name=demo
+spring.mvc.view.suffix=.jsp
+spring.mvc.view.prefix=/views/
+
+# Logging Configuration
+logging.level.org.springframework.web=DEBUG
+logging.level.org.springframework.web.servlet=DEBUG
+
+# Server Configuration
+server.port=9090
+
+# emSigner Configuration
+# Update these paths to match your local environment
+
+# Certificate file path (X.509 certificate for RSA encryption)
+CERT_FILE=/path/to/your/certificate.cer
+
+# Temporary file storage directory
+TEMP_FILE=/path/to/temp/directory/
+
+# Sample PDF file path (for testing)
+PDF=/path/to/sample.pdf
+
+# PFX certificate path (if required by your setup)
+PFX=/path/to/certificate.pfx
+
+# Log folder path
+LOG_FOLDER=/path/to/logs/
+
+# Response URL (callback URL for emSigner)
+# Update this to match your deployed application URL
+RESPONSE_URL=http://localhost:9090/api/success
